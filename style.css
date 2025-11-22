@@ -1,0 +1,182 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: #1e3a8a;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 15px 0 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* ===== MAIN CONTENT ===== */
+main, 
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* ===== ABOUT PAGE IMAGE ===== */
+img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* ===== PROJECT PAGE TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+table thead {
+    background: #1e3a8a;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+}
+
+table tbody tr:hover {
+    background: #e8ecff;
+    transition: 0.2s;
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #1e3a8a;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4338ca;
+    box-shadow: 0 0 5px rgba(67, 56, 202, 0.3);
+}
+
+button {
+    width: 150px;
+    padding: 12px;
+    background: #1e3a8a;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+/* ===== LIST STYLING FOR ABOUT PAGE ===== */
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #eef2ff;
+    border-left: 5px solid #1e3a8a;
+    border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #1e3a8a;
+    color: white;
+    border-radius: 12px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media(max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    main, .container {
+        padding: 20px;
+    }
+}
